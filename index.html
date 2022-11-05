@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/imgs/fav.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6b5a69a0c3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+
+    <script
+    src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""
+  ></script>
+    <!-- icons png -->
+    <link href="https://css.gg/shopping-cart.css" rel="stylesheet" />
+
+    <!--  -->
+   
+
+    <script defer src="main.js"></script>
+    <title>Coffee street</title>
+  </head>
+  <body>
+    <header class="headerHid">
+      <div class="top headshow">
+        <div class="head-container nav-hidden head-containerhid">
+          <img src="/imgs/logo_coffe.png" alt="logo-img" />
+          <ul class="uls">
+            <li class="nav-child child1"><a href="#aboutus">About us</a></li>
+            <li class="nav-child child3"><a href="#delivery">Delivery</a></li>
+            <li class="nav-child child2"><a href="#mapss">Location</a></li>
+          </ul>
+          <nav class="search-img-container">
+            <!-- <div class="container">
+            <input
+              type="text"
+              id="box"
+              placeholder="Search anything..."
+              class="search__box"
+            />
+            <i
+              class="fas fa-search search__icon"
+              id="icon"
+              onclick="toggleShow()"
+            ></i>
+          </div> -->
+            <!-- <img src="/imgs/icons_cart.png" alt="" class="cart" /> -->
+            <i class="gg-shopping-cart cartnav"></i>
+          </nav>
+        </div>
+        <section class="shoping-cart shopcartHid">
+          <div class="shhophead">
+            <div><span>Cart</span> <img src="/imgs/cartO.png" alt="" /></div>
+            <i class="gg-close"></i>
+          </div>
+          <div class="shopconts">
+            <div class="shopcont"></div>
+          </div>
+          <div class="shopbot">
+            <h2>Total is</h2>
+            <span class="total">0</span>
+          </div>
+          <!-- addd flex to align them -->
+          <button class="btn checkout">checkout</button>
+          <!-- <div class="buttons"> -->
+          <!-- <button class="btn clear">Clear All</button> -->
+          <!-- <img src="" alt="" /> -->
+          <!-- </div> -->
+        </section>
+      </div>
+      <div class="cofe-spreat">
+        <img src="/imgs/cofespread.png" alt="" class="spreat1" />
+        <img src="/imgs/cofespread.png" alt="" class="spreat2" />
+      </div>
+      <div class="head-stuf">
+        <div class="stuf1 stuf1hid">
+          <h2>
+            Enjoy your <span class="color">coffee</span> before your activity
+          </h2>
+          <p>
+            Boost your productivity and build your mood with a glass of coffee
+            in the morning
+          </p>
+          <div class="stuf1Chidl3">
+            <button class="btn bnt1">Order now</button>
+            <button class="btn bnt2">More menu</button>
+          </div>
+        </div>
+        <div class="stuf2 stuf2hid">
+          <img src="/imgs/hero-img.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="sections popular-now">
+      <h2>Popular <span>Now</span></h2>
+      <div class="popular-nowSEC">
+        <div class="wrapper">
+          <div class="popular-container">
+            <img src="/imgs/cofeepics/cofe1.jpg" alt="" />
+            <div class="cnt1">
+              
+              <div class="cnt1-div1" data-name="cofe1">
+                <h3>Hazelnut Latte</h3>
+                <span>19</span>
+              </div>
+              <div class="cnt1-div2">
+                <div class="div1">Free sugar Hazelnut latte</div>
+                <!-- <div class="myButton">add to cart</div> -->
+                <button>Add to cart</button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="popular-container">
+            <img src="/imgs/cofeepics/cofe2.jpg" alt="" />
+            <div class="cnt1">
+              
+              <div class="cnt1-div1" data-name="cofe2">
+                <h3>Espreso</h3>
+                <span>11</span>
+              </div>
+              <div class="cnt1-div2">
+                <div class="div1">Delicious Espresso</div>
+                <!-- <div class="myButton">add to cart</div> -->
+                <button>Add to cart</button>
+              </div>
+            
+              </div>
+            </div>
+            <div class="popular-container">
+              <img src="/imgs/cofeepics/cofe3.jpg" alt="" />
+              <div class="cnt1">
+                
+                <div class="cnt1-div1" data-name="cofe3">
+                  <h3>Vanilla Late</h3>
+                  <span>9</span>
+                </div>
+                <div class="cnt1-div2">
+                  <div class="div1">Hot Vanilla Late</div>
+                  <!-- <div class="myButton">add to cart</div> -->
+                  <button>Add to cart</button>
+                </div>
+                
+                </div>
+              </div>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sections howTO howTOhid" id="delivery">
+      <h2>How to use delivery <span>service </span></h2>
+      <div class="svgsContainer">
+        <div class="cont1">
+          <img src="/imgs/svgs/svg1.png" alt="" />
+          <h3>choose your coffee</h3>
+          <h4>there are 20+ coffees for you</h4>
+        </div>
+        <div class="cont1">
+          <img src="/imgs/svgs/svg3.png" alt="" />
+          <h3>we devlivery it for you</h3>
+          <h4>Choose delivery service</h4>
+        </div>
+        <div class="cont1">
+          <img src="/imgs/svgs/svg2.png" alt="" />
+          <h3>choose your coffee</h3>
+          <h4>there are 20+ coffees for you</h4>
+        </div>
+      </div>
+    </section>
+    <section class="sections aboutus" id="aboutus">
+      <img src="/imgs/imglong.jpg" alt="" class="aboutusimg" />
+      <div class="abouts">
+        <div class="about1"><img src="/imgs/aboutuspic.png" alt="" /></div>
+        <div class="about2">
+          <h2>About <span>us</span></h2>
+          <h3>We provide quality coffee, and ready to deliver.</h3>
+          <p>
+            We are a company that makes and distributes delicious drinks. our
+            main product is made with a secret recipe and available in stores
+            worldwide.
+          </p>
+          <button>Get your coffee</button>
+        </div>
+      </div>
+    </section>
+    <section class="sections mapsec" id="mapss">
+      <h2>Where we <span>locate</span></h2>
+      <div class="maps">
+        <div id="map"></div>
+        <div class="mapcontent">
+          <div class="mapcontent1">
+            <h2>Location</h2>
+            <p>17116 Belvord Blvd</p>
+            <p>Belvord,CA 10912</p>
+          </div>
+          <div class="mapcontent2">
+            <h2>Contact</h2>
+            <p><span class="big">Phone</span>: (696) 664-2912</p>
+            <p><span class="big">Fax</span>: (696) 664-2912</p>
+            <p><span class="big">email</span>: coffebest@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="content">
+          ⁡⁢⁣⁣ ⁡
+          <div class="col">
+            <p class="main">contact us</p>
+            <p>
+              hi, we are always open for cooperation and suggestions, <br />
+              contact us in one of the ways below:
+            </p>
+            <div class="flex">
+              <div class="col-info">
+                <p>
+                  PHONE NUMBER <br />
+                  <span>+(696) 664-2912</span>
+                </p>
+                <p>
+                  OUR LOCATION <br />
+                  <span
+                    >17116 Belvord Blvd <br />
+                    Belvord,CA 10912</span
+                  >
+                </p>
+              </div>
+              <div class="col-info">
+                <p>
+                  EMAIL ADDRESS <br />
+                  <span>cofestreet@gmail.com</span>
+                </p>
+
+                <p>
+                  WORKING HOURS <br />
+                  <span>Mon-sat 10:00pm - 7:00pm</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          ⁡⁢⁣⁡⁢⁣⁣ ⁡
+          <div class="col">
+            <div class="column">
+              <p class="main">information</p>
+              <p>about us</p>
+              <p>delivery information</p>
+              <p>privacy policy</p>
+              <p>brands</p>
+              <p>contact us</p>
+              <p>returns</p>
+              <p>site map</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="column">
+              <p class="main">my account</p>
+              <p>store location</p>
+              <p>order history</p>
+              <p>wish list</p>
+              <p>newsletter</p>
+              <p>special offers</p>
+              <p>gift certificates</p>
+              <p>affiliate</p>
+            </div>
+          </div>
+          ⁡⁢⁣⁣ ⁡
+          <div class="col">
+            <p class="main">newsletter</p>
+            <p>
+              enter your email address below to subscribe to our newsletter<br />
+              and keep up to date with discounts and special offers.
+            </p>
+            <form class="email">
+              <input type="email" placeholder="user@example.com" />
+              <button>Subscribe</button>
+            </form>
+            <p>follow us on social networks:</p>
+            <div class="social">
+              <img src="https://i.postimg.cc/44pPB9wk/facebook.png" alt="" />
+              <img src="https://i.postimg.cc/L8Q3nB4f/twitter.png" alt="" />
+              <img src="https://i.postimg.cc/TYG9S3Hy/instagram.png" alt="" />
+              <img src="https://i.postimg.cc/kGCxkTwr/youtube.png" alt="" />
+              <img src="https://i.postimg.cc/CKZHDBd2/telegram.png" alt="" />
+            </div>
+          </div>
+          ⁡⁢⁡⁢⁣⁣
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
