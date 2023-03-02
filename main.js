@@ -204,3 +204,8 @@ const ob = new IntersectionObserver(callaback, options);
 ob.observe(document.querySelector("header"));
 
 // trash delete
+
+window.addEventListener("load", () => {
+  document.querySelector(".preload").style.display = "none";
+  document.body.style.overflow = "unset";
+});
