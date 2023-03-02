@@ -1025,3 +1025,13 @@ footer {
   background-color: white;
   padding: 1rem 0.5rem;
 }
+body {
+  overflow: hidden;
+}
+.preload {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10010;
+  background: #e48226 url(/loading-gif.gif) no-repeat center center;
+}
